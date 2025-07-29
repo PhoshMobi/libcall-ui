@@ -228,11 +228,14 @@ on_call_state_changed (CuiCallDisplay *self,
       (GTK_WIDGET (self->gsm_controls),
       state != CUI_CALL_STATE_CALLING);
 
-    /* TODO Only switch to "call" audio mode for cellular calls */
-    call_audio_select_mode_async (CALL_AUDIO_MODE_CALL,
-                                  on_libcallaudio_async_finished,
-                                  NULL);
-    self->needs_cam_reset = TRUE;
+    /* TODO: remove CUI_CALL_TYPE_UNKNOWN when all library users are recent enough */
+    if (cui_call_get_call_type(call) == CUI_CALL_TYPE_CELLULAR ||
+        cui_call_get_call_type(call) == CUI_CALL_TYPE_UNKNOWN) {
+      call_audio_select_mode_async (CALL_AUDIO_MODE_CALL,
+                                    on_libcallaudio_async_finished,
+                                    NULL);
+      self->needs_cam_reset = TRUE;
+    }
     break;
 
   case CUI_CALL_STATE_DISCONNECTED:

@@ -35,6 +35,12 @@ typedef enum
   CUI_CALL_STATE_DISCONNECTED = 7
 } CuiCallState;
 
+typedef enum {
+  CUI_CALL_TYPE_UNKNOWN = 0,
+  CUI_CALL_TYPE_CELLULAR,
+  CUI_CALL_TYPE_SIP_VOICE,
+} CuiCallType;
+
 /**
  * CuiCallInterface:
  * @parent_iface: The parent interface
@@ -42,6 +48,7 @@ typedef enum
  * @get_display_name: Get current calls's display name
  * @get_id: Get current calls's id
  * @get_state: Get the call's state
+ * @get_call_type: Get the call's type
  * @get_encrypted: Gets whether the call is encrypted
  * @get_can_dtmf: Gets whether the call can handle DTMF
  * @accept: Accept the incoming call
@@ -55,6 +62,7 @@ struct _CuiCallInterface {
   const char    *(*get_display_name)       (CuiCall *self);
   const char    *(*get_id)                 (CuiCall *self);
   CuiCallState   (*get_state)              (CuiCall *self);
+  CuiCallType    (*get_call_type)          (CuiCall *self);
   gboolean       (*get_encrypted)          (CuiCall *self);
   gboolean       (*get_can_dtmf)           (CuiCall *self);
   gdouble        (*get_active_time)        (CuiCall *self);
@@ -68,6 +76,7 @@ GdkPaintable *cui_call_get_avatar_icon  (CuiCall *self);
 const char   *cui_call_get_display_name (CuiCall *self);
 const char   *cui_call_get_id           (CuiCall *self);
 CuiCallState  cui_call_get_state        (CuiCall *self);
+CuiCallType   cui_call_get_call_type    (CuiCall *self);
 gboolean      cui_call_get_encrypted    (CuiCall *self);
 gboolean      cui_call_get_can_dtmf     (CuiCall *self);
 gdouble       cui_call_get_active_time  (CuiCall *self);
@@ -77,4 +86,5 @@ void          cui_call_hang_up          (CuiCall *self);
 void          cui_call_send_dtmf (CuiCall *self, const gchar *dtmf);
 
 const char   *cui_call_state_to_string  (CuiCallState state);
+const char   *cui_call_type_to_string   (CuiCallType type);
 char         *cui_call_format_duration  (double duration);

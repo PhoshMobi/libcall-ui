@@ -18,6 +18,7 @@ enum {
   PROP_DISPLAY_NAME,
   PROP_ID,
   PROP_STATE,
+  PROP_CALL_TYPE,
   PROP_ENCRYPTED,
   PROP_CAN_DTMF,
   PROP_ACTIVE_TIME,
@@ -32,6 +33,7 @@ struct _CuiDummyCall
   char         *id;
   char         *display_name;
   CuiCallState  state;
+  CuiCallType   call_type;
   gboolean      encrypted;
   gboolean      can_dtmf;
 };
@@ -61,6 +63,9 @@ cui_dummy_call_get_property (GObject    *object,
     g_value_set_string (value, self->display_name);
     break;
   case PROP_STATE:
+    g_value_set_enum (value, self->state);
+    break;
+  case PROP_CALL_TYPE:
     g_value_set_enum (value, self->state);
     break;
   case PROP_ENCRYPTED:
@@ -119,6 +124,11 @@ cui_dummy_call_class_init (CuiDummyCallClass *klass)
   props[PROP_STATE] = g_object_class_find_property (object_class, "state");
 
   g_object_class_override_property (object_class,
+                                      PROP_CALL_TYPE,
+                                      "call_type");
+  props[PROP_CALL_TYPE] = g_object_class_find_property (object_class, "call_type");
+
+  g_object_class_override_property (object_class,
                                     PROP_ENCRYPTED,
                                     "encrypted");
   props[PROP_ENCRYPTED] = g_object_class_find_property (object_class, "encrypted");
@@ -160,6 +170,15 @@ cui_dummy_call_get_state (CuiCall *call)
   g_return_val_if_fail (CUI_IS_DUMMY_CALL (call), CUI_CALL_STATE_UNKNOWN);
 
   return CUI_DUMMY_CALL (call)->state;
+}
+
+
+static CuiCallType
+cui_dummy_call_get_call_type (CuiCall *call)
+{
+  g_return_val_if_fail (CUI_IS_DUMMY_CALL (call), CUI_CALL_STATE_UNKNOWN);
+
+  return CUI_DUMMY_CALL (call)->call_type;
 }
 
 
@@ -216,6 +235,7 @@ cui_dummy_cui_call_interface_init (CuiCallInterface *iface)
   iface->get_id = cui_dummy_call_get_id;
   iface->get_display_name = cui_dummy_call_get_display_name;
   iface->get_state = cui_dummy_call_get_state;
+  iface->get_call_type = cui_dummy_call_get_call_type;
   iface->get_encrypted = cui_dummy_call_get_encrypted;
   iface->get_can_dtmf = cui_dummy_call_get_can_dtmf;
 
@@ -231,6 +251,7 @@ cui_dummy_call_init (CuiDummyCall *self)
   self->display_name = g_strdup ("John Doe");
   self->id = g_strdup ("0800 1234");
   self->state = CUI_CALL_STATE_INCOMING;
+  self->call_type = CUI_CALL_TYPE_CELLULAR;
   self->can_dtmf = TRUE;
 }
 
@@ -280,6 +301,21 @@ cui_dummy_call_set_state (CuiDummyCall *self,
   self->state = state;
 
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_STATE]);
+}
+
+
+void
+cui_dummy_call_set_call_type (CuiDummyCall *self,
+                              CuiCallType   type)
+{
+  g_return_if_fail (CUI_IS_DUMMY_CALL (self));
+
+  if (self->call_type == type)
+    return;
+
+  self->call_type = type;
+
+  g_object_notify_by_pspec (G_OBJECT (self), props[PROP_CALL_TYPE]);
 }
 
 

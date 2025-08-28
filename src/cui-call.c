@@ -83,6 +83,20 @@ cui_call_default_init (CuiCallInterface *iface)
                        G_PARAM_READABLE | G_PARAM_EXPLICIT_NOTIFY));
 
   /**
+   * CuiCall:call-type:
+   *
+   * The call's type.
+   */
+  g_object_interface_install_property (
+    iface,
+    g_param_spec_enum ("call-type",
+                       "",
+                       "",
+                       CUI_TYPE_CALL_TYPE,
+                       CUI_CALL_TYPE_UNKNOWN,
+                       G_PARAM_READABLE | G_PARAM_EXPLICIT_NOTIFY));
+
+  /**
    * CuiCall:encrypted:
    *
    * Whether the call is encrypted
@@ -189,6 +203,20 @@ cui_call_get_state (CuiCall *self)
   g_return_val_if_fail (iface->get_state, CUI_CALL_STATE_UNKNOWN);
 
   return iface->get_state (self);
+}
+
+
+CuiCallType
+cui_call_get_call_type (CuiCall *self)
+{
+  CuiCallInterface *iface;
+
+  g_return_val_if_fail (CUI_IS_CALL (self), CUI_CALL_TYPE_UNKNOWN);
+
+  iface = CUI_CALL_GET_IFACE (self);
+  g_return_val_if_fail (iface->get_state, CUI_CALL_TYPE_UNKNOWN);
+
+  return iface->get_call_type (self);
 }
 
 
@@ -317,6 +345,26 @@ cui_call_state_to_string (CuiCallState state)
   case CUI_CALL_STATE_UNKNOWN:
   default:
     return _("Unknown");
+  }
+}
+
+/**
+ * cui_call_type_to_string:
+ * @type: The #CuiCallType
+ *
+ * Returns: (transfer none): A human readable type description
+ */
+const char *
+cui_call_type_to_string (CuiCallType type)
+{
+  switch (type) {
+    case CUI_CALL_TYPE_CELLULAR:
+      return _("Cellular");
+    case CUI_CALL_TYPE_SIP_VOICE:
+      return _("SIP Voice");
+   case CUI_CALL_TYPE_UNKNOWN:
+   default:
+      return _("Unknown");
   }
 }
 

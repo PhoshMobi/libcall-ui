@@ -19,5 +19,7 @@ void              cui_dummy_call_set_encrypted     (CuiDummyCall *self,
                                                     gboolean      enabled);
 void              cui_dummy_call_set_state         (CuiDummyCall *self,
                                                     CuiCallState  state);
+void              cui_dummy_call_set_call_type     (CuiDummyCall *self,
+                                                    CuiCallType   type);
 
 G_END_DECLS

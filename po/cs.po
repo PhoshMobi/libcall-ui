@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libcall-ui main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Phosh/libcall-ui/"
 "issues/\n"
-"POT-Creation-Date: 2022-10-05 19:19+0000\n"
-"PO-Revision-Date: 2022-10-19 15:22+0200\n"
+"POT-Creation-Date: 2025-09-04 16:36+0000\n"
+"PO-Revision-Date: 2025-09-04 22:48+0200\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -18,82 +18,77 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : "
 "2;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.7\n"
 
-#: src/cui-call.c:310
+#: src/cui-call.c:336
 msgid "Call active"
 msgstr "Hovor aktivní"
 
-#: src/cui-call.c:312
+#: src/cui-call.c:338
 msgid "Call held"
 msgstr "Hovor přidržen"
 
-#. Deprecated
-#: src/cui-call.c:315
+#: src/cui-call.c:340
 msgid "Calling…"
 msgstr "Volání…"
 
-#. Deprecated
-#: src/cui-call.c:318
+#: src/cui-call.c:342
 msgid "Incoming call"
 msgstr "Příchozí hovor"
 
-#: src/cui-call.c:320
+#: src/cui-call.c:344
 msgid "Call ended"
 msgstr "Hovor skončil"
 
-#: src/cui-call.c:323 src/cui-call-display.c:319
+#: src/cui-call.c:347 src/cui-call.c:367 src/cui-call-display.c:288
 msgid "Unknown"
 msgstr "Neznámé"
 
-#: src/cui-call-display.c:100
+#: src/cui-call.c:362
+msgid "Cellular"
+msgstr "Mobilní síť"
+
+#: src/cui-call.c:364
+msgid "SIP Voice"
+msgstr "Hlas SIP"
+
+#: src/cui-call-display.c:102
 msgid "Accepting call…"
 msgstr "Přijímání hovoru…"
 
-#: src/cui-call-display.c:115
+#: src/cui-call-display.c:117
 msgid "Hanging up…"
 msgstr "Zavěšování…"
 
-#: src/cui-call-display.ui:28
-msgid "Incoming phone call"
-msgstr "Příchozí telefonní hovor"
+#~ msgid "Incoming phone call"
+#~ msgstr "Příchozí telefonní hovor"
 
-#: src/cui-call-display.ui:194
-msgid "Mute"
-msgstr "Ztlumit"
+#~ msgid "Mute"
+#~ msgstr "Ztlumit"
 
-#: src/cui-call-display.ui:210
-msgid "Speaker"
-msgstr "Reproduktor"
+#~ msgid "Speaker"
+#~ msgstr "Reproduktor"
 
-#: src/cui-call-display.ui:226
-msgid "Add call"
-msgstr "Přidat hovor"
+#~ msgid "Add call"
+#~ msgstr "Přidat hovor"
 
-#: src/cui-call-display.ui:276
-msgid "Hold"
-msgstr "Přidržet"
+#~ msgid "Hold"
+#~ msgstr "Přidržet"
 
-#: src/cui-call-display.ui:318
-msgid "Dial Pad"
-msgstr "Číselník"
+#~ msgid "Dial Pad"
+#~ msgstr "Číselník"
 
-#: src/cui-dialpad.ui:24
-msgid "Enter a number"
-msgstr "Zadejte číslo"
+#~ msgid "Enter a number"
+#~ msgstr "Zadejte číslo"
 
-#: src/cui-dialpad.ui:25
-msgid "Type a phone number"
-msgstr "Zadejte telefonní číslo"
+#~ msgid "Type a phone number"
+#~ msgstr "Zadejte telefonní číslo"
 
-#: src/cui-dialpad.ui:49
-msgid "Call that phone number"
-msgstr "Volat toto telefonní číslo"
+#~ msgid "Call that phone number"
+#~ msgstr "Volat toto telefonní číslo"
 
-#: src/cui-encryption-indicator.ui:21
-msgid "This call is not encrypted"
-msgstr "Tento hovor není zašifrován"
+#~ msgid "This call is not encrypted"
+#~ msgstr "Tento hovor není zašifrován"
 
-#: src/cui-encryption-indicator.ui:42
-msgid "This call is encrypted"
-msgstr "Tento hovor je zašifrován"
+#~ msgid "This call is encrypted"
+#~ msgstr "Tento hovor je zašifrován"

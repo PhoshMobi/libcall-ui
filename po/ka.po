@@ -1,113 +1,105 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ekaterine Papava <papava.e@gtu.ge>, 025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Phosh/libcall-ui/"
 "issues/\n"
-"POT-Creation-Date: 2022-09-02 10:56+0000\n"
-"PO-Revision-Date: 2022-09-02 13:39+0200\n"
-"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"POT-Creation-Date: 2025-09-01 13:42+0000\n"
+"PO-Revision-Date: 2025-09-04 09:13+0200\n"
+"Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: \n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.7\n"
 
-#: src/cui-call.c:310
+#: src/cui-call.c:336
 msgid "Call active"
 msgstr "აქტიური ზარი"
 
-#: src/cui-call.c:312
+#: src/cui-call.c:338
 msgid "Call held"
 msgstr "შეყოვნებული ზარი"
 
-#. Deprecated
-#: src/cui-call.c:315
+#: src/cui-call.c:340
 msgid "Calling…"
 msgstr "დარეკვა…"
 
-#. Deprecated
-#: src/cui-call.c:318
+#: src/cui-call.c:342
 msgid "Incoming call"
 msgstr "შემომავალი ზარი"
 
-#: src/cui-call.c:320
+#: src/cui-call.c:344
 msgid "Call ended"
 msgstr "ზარი დასრულდა"
 
-#: src/cui-call.c:323 src/cui-call-display.c:319
+#: src/cui-call.c:347 src/cui-call.c:367 src/cui-call-display.c:288
 msgid "Unknown"
 msgstr "უცნობი"
 
-#: src/cui-call-display.c:100
+#: src/cui-call.c:362
+msgid "Cellular"
+msgstr "მობილური"
+
+#: src/cui-call.c:364
+msgid "SIP Voice"
+msgstr "SIP ხმა"
+
+#: src/cui-call-display.c:102
 msgid "Accepting call…"
 msgstr "ზარზე პასუხი…"
 
-#: src/cui-call-display.c:115
+#: src/cui-call-display.c:117
 msgid "Hanging up…"
 msgstr "გათიშვა…"
 
-#: src/cui-call-display.ui:35
-msgid "Incoming phone call"
-msgstr "შემომავალი სატელეფონო ზარი"
+#~ msgid "Incoming phone call"
+#~ msgstr "შემომავალი სატელეფონო ზარი"
 
-#: src/cui-call-display.ui:126
-msgid "Mute"
-msgstr "დადუმება"
+#~ msgid "Mute"
+#~ msgstr "დადუმება"
 
-#: src/cui-call-display.ui:159
-msgid "Speaker"
-msgstr "დინამიკი"
+#~ msgid "Speaker"
+#~ msgstr "დინამიკი"
 
-#: src/cui-call-display.ui:191
-msgid "Add call"
-msgstr "ზარის დამატება"
+#~ msgid "Add call"
+#~ msgstr "ზარის დამატება"
 
-#: src/cui-call-display.ui:231
-msgid "Hold"
-msgstr "შეყოვნება"
+#~ msgid "Hold"
+#~ msgstr "შეყოვნება"
 
-#: src/cui-call-display.ui:263
-msgid "Dial Pad"
-msgstr "ციფერბლატი"
+#~ msgid "Dial Pad"
+#~ msgstr "ციფერბლატი"
 
-#: src/cui-call-display.ui:311
-msgid "Hang up"
-msgstr "გათიშვა"
+#~ msgid "Hang up"
+#~ msgstr "გათიშვა"
 
-#: src/cui-call-display.ui:340
-msgid "Answer"
-msgstr "პასუხი"
+#~ msgid "Answer"
+#~ msgstr "პასუხი"
 
-#: src/cui-call-display.ui:415
-msgid "Hide the dial pad"
-msgstr "ციფერბლატის დამალვა"
+#~ msgid "Hide the dial pad"
+#~ msgstr "ციფერბლატის დამალვა"
 
-#: src/cui-dialpad.ui:24
-msgid "Enter a number"
-msgstr "შეიყვანეთ ნომერი"
+#~ msgid "Enter a number"
+#~ msgstr "შეიყვანეთ ნომერი"
 
-#: src/cui-dialpad.ui:25
-msgid "Type a phone number"
-msgstr "აკრიფეთ ტელეფონის ნომერი"
+#~ msgid "Type a phone number"
+#~ msgstr "აკრიფეთ ტელეფონის ნომერი"
 
-#: src/cui-dialpad.ui:49
-msgid "Call that phone number"
-msgstr "ამ ნომერზე დარეკვა"
+#~ msgid "Call that phone number"
+#~ msgstr "ამ ნომერზე დარეკვა"
 
-#: src/cui-encryption-indicator.ui:20
-msgid "This call is not encrypted"
-msgstr "ეს ზარი არ იშიფრება"
+#~ msgid "This call is not encrypted"
+#~ msgstr "ეს ზარი არ იშიფრება"
 
-#: src/cui-encryption-indicator.ui:40
-msgid "This call is encrypted"
-msgstr "ეს ზარი იშიფრება"
+#~ msgid "This call is encrypted"
+#~ msgstr "ეს ზარი იშიფრება"
 
 #~ msgid "Call-UI Demo"
 #~ msgstr "Call-UI Demo"

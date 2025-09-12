@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libcall-ui main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Phosh/libcall-ui/"
 "issues/\n"
-"POT-Creation-Date: 2022-09-02 12:31+0000\n"
-"PO-Revision-Date: 2022-09-09 19:31+0300\n"
+"POT-Creation-Date: 2025-09-10 21:02+0000\n"
+"PO-Revision-Date: 2025-09-12 18:58+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: Finnish <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
@@ -17,85 +17,80 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.7\n"
 
-#: src/cui-call.c:310
+#: src/cui-call.c:336
 msgid "Call active"
 msgstr "Puhelu aktiivisena"
 
-#: src/cui-call.c:312
+#: src/cui-call.c:338
 msgid "Call held"
 msgstr "Puhelu pidossa"
 
-#. Deprecated
-#: src/cui-call.c:315
+#: src/cui-call.c:340
 msgid "Calling…"
 msgstr "Soitetaan…"
 
-#. Deprecated
-#: src/cui-call.c:318
+#: src/cui-call.c:342
 msgid "Incoming call"
 msgstr "Saapuva puhelu"
 
-#: src/cui-call.c:320
+#: src/cui-call.c:344
 msgid "Call ended"
 msgstr "Puhelu päättyi"
 
-#: src/cui-call.c:323 src/cui-call-display.c:319
+#: src/cui-call.c:347 src/cui-call.c:367 src/cui-call-display.c:288
 msgid "Unknown"
 msgstr "Tuntematon"
 
-#: src/cui-call-display.c:100
+#: src/cui-call.c:362
+msgid "Cellular"
+msgstr "Matkapuhelin"
+
+#: src/cui-call.c:364
+msgid "SIP Voice"
+msgstr "SIP-ääni"
+
+#: src/cui-call-display.c:102
 msgid "Accepting call…"
 msgstr "Hyväksytään puhelu…"
 
-#: src/cui-call-display.c:115
+#: src/cui-call-display.c:117
 msgid "Hanging up…"
 msgstr "Lopetetaan puhelu…"
 
-#: src/cui-call-display.ui:28
-msgid "Incoming phone call"
-msgstr "Saapuva puhelu"
+#~ msgid "Incoming phone call"
+#~ msgstr "Saapuva puhelu"
 
-#: src/cui-call-display.ui:194
-msgid "Mute"
-msgstr "Mykistä"
+#~ msgid "Mute"
+#~ msgstr "Mykistä"
 
-#: src/cui-call-display.ui:210
-msgid "Speaker"
-msgstr "Kaiutin"
+#~ msgid "Speaker"
+#~ msgstr "Kaiutin"
 
-#: src/cui-call-display.ui:226
-msgid "Add call"
-msgstr "Lisää puhelu"
+#~ msgid "Add call"
+#~ msgstr "Lisää puhelu"
 
-#: src/cui-call-display.ui:276
-msgid "Hold"
-msgstr "Pitoon"
+#~ msgid "Hold"
+#~ msgstr "Pitoon"
 
-#: src/cui-call-display.ui:318
-msgid "Dial Pad"
-msgstr "Numeronäppäimistö"
+#~ msgid "Dial Pad"
+#~ msgstr "Numeronäppäimistö"
 
-#: src/cui-dialpad.ui:24
-msgid "Enter a number"
-msgstr "Anna numero"
+#~ msgid "Enter a number"
+#~ msgstr "Anna numero"
 
-#: src/cui-dialpad.ui:25
-msgid "Type a phone number"
-msgstr "Kirjoita puhelinnumero"
+#~ msgid "Type a phone number"
+#~ msgstr "Kirjoita puhelinnumero"
 
-#: src/cui-dialpad.ui:49
-msgid "Call that phone number"
-msgstr "Soita puhelinnumeroon"
+#~ msgid "Call that phone number"
+#~ msgstr "Soita puhelinnumeroon"
 
-#: src/cui-encryption-indicator.ui:21
-msgid "This call is not encrypted"
-msgstr "Tämä puhelu ei ole salattu"
+#~ msgid "This call is not encrypted"
+#~ msgstr "Tämä puhelu ei ole salattu"
 
-#: src/cui-encryption-indicator.ui:42
-msgid "This call is encrypted"
-msgstr "Tämä puhelu on salattu"
+#~ msgid "This call is encrypted"
+#~ msgstr "Tämä puhelu on salattu"
 
 #~ msgid "Hang up"
 #~ msgstr "Lopeta"

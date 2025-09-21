@@ -1,0 +1,60 @@
+# Esperanto translation for libcall-ui.
+# Copyright (C) 2025 libcall-ui's COPYRIGHT HOLDER
+# This file is distributed under the same license as the libcall-ui package.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libcall-ui main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Phosh/libcall-ui/"
+"issues/\n"
+"POT-Creation-Date: 2025-09-13 21:06+0000\n"
+"PO-Revision-Date: 2025-09-21 13:39+0200\n"
+"Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
+"Language-Team: Esperanto <gnome-eo-list@gnome.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 48.0\n"
+
+#: src/cui-call.c:336
+msgid "Call active"
+msgstr "Voko aktiva"
+
+#: src/cui-call.c:338
+msgid "Call held"
+msgstr "Voko tenata"
+
+#: src/cui-call.c:340
+msgid "Calling…"
+msgstr "Vokado…"
+
+#: src/cui-call.c:342
+msgid "Incoming call"
+msgstr "Envenanta voko"
+
+#: src/cui-call.c:344
+msgid "Call ended"
+msgstr "Voko finiĝis"
+
+#: src/cui-call.c:347 src/cui-call.c:367 src/cui-call-display.c:288
+msgid "Unknown"
+msgstr "Nekonata"
+
+#: src/cui-call.c:362
+msgid "Cellular"
+msgstr "Poŝtelefona"
+
+#: src/cui-call.c:364
+msgid "SIP Voice"
+msgstr "SIP-voĉo"
+
+#: src/cui-call-display.c:102
+msgid "Accepting call…"
+msgstr "Akceptado de voko…"
+
+#: src/cui-call-display.c:117
+msgid "Hanging up…"
+msgstr "Fermado de voko…"

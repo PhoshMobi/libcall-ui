@@ -1,4 +1,5 @@
 _build/
+.meson-subproject-wrap-hash.txt
 subprojects/gi-docgen/
 po/call-ui.pot
 po/messages.mo

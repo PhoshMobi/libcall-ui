@@ -1,5 +1,5 @@
 _build/
-subprojects/gi-docgen/
+.meson-subproject-wrap-hash.txt
 po/call-ui.pot
 po/messages.mo
 po/missing

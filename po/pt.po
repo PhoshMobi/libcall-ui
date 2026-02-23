@@ -1,17 +1,18 @@
 # Portuguese translation for libcall-ui.
-# Copyright (C) 2021 libcall-ui's COPYRIGHT HOLDER
+# Copyright (C) 2026 libcall-ui's COPYRIGHT HOLDER
 # This file is distributed under the same license as the libcall-ui package.
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2021-2022.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2021-2026.
 # Juliano de Souza Camargo <julianosc@protonmail.com>, 2021, 2022.
+# André Moreira <afrmscb@gmail.com>, 2026-2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: libcall-ui main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Phosh/libcall-ui/"
 "issues/\n"
-"POT-Creation-Date: 2022-09-02 12:31+0000\n"
-"PO-Revision-Date: 2022-10-26 14:17+0100\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"POT-Creation-Date: 2025-10-20 21:07+0000\n"
+"PO-Revision-Date: 2026-02-23 18:00+0000\n"
+"Last-Translator: André Moreira <afrmscb@gmail.com>\n"
 "Language-Team: Portuguese < https://l10n.gnome.org/teams/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
@@ -23,85 +24,80 @@ msgstr ""
 "X-DL-Branch: main\n"
 "X-DL-Domain: po\n"
 "X-DL-State: None\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.8\n"
 
-#: src/cui-call.c:310
+#: src/cui-call.c:336
 msgid "Call active"
 msgstr "Chamada ativa"
 
-#: src/cui-call.c:312
+#: src/cui-call.c:338
 msgid "Call held"
-msgstr "Chamada realizada"
+msgstr "Chamada em espera"
 
-#. Deprecated
-#: src/cui-call.c:315
+#: src/cui-call.c:340
 msgid "Calling…"
 msgstr "A chamar…"
 
-#. Deprecated
-#: src/cui-call.c:318
+#: src/cui-call.c:342
 msgid "Incoming call"
 msgstr "Chamada recebida"
 
-#: src/cui-call.c:320
+#: src/cui-call.c:344
 msgid "Call ended"
 msgstr "Chamada terminada"
 
-#: src/cui-call.c:323 src/cui-call-display.c:319
+#: src/cui-call.c:347 src/cui-call.c:367 src/cui-call-display.c:296
 msgid "Unknown"
 msgstr "Desconhecido"
 
-#: src/cui-call-display.c:100
+#: src/cui-call.c:362
+msgid "Cellular"
+msgstr "Rede móvel"
+
+#: src/cui-call.c:364
+msgid "SIP Voice"
+msgstr "Voz SIP"
+
+#: src/cui-call-display.c:102
 msgid "Accepting call…"
 msgstr "A aceitar chamada…"
 
-#: src/cui-call-display.c:115
+#: src/cui-call-display.c:117
 msgid "Hanging up…"
 msgstr "A desligar…"
 
-#: src/cui-call-display.ui:28
-msgid "Incoming phone call"
-msgstr "A receber chamada teléfonica"
+#~ msgid "Incoming phone call"
+#~ msgstr "A receber chamada teléfonica"
 
-#: src/cui-call-display.ui:194
-msgid "Mute"
-msgstr "Silenciar"
+#~ msgid "Mute"
+#~ msgstr "Silenciar"
 
-#: src/cui-call-display.ui:210
-msgid "Speaker"
-msgstr "Altifalante"
+#~ msgid "Speaker"
+#~ msgstr "Altifalante"
 
-#: src/cui-call-display.ui:226
-msgid "Add call"
-msgstr "Adicionar chamada"
+#~ msgid "Add call"
+#~ msgstr "Adicionar chamada"
 
-#: src/cui-call-display.ui:276
-msgid "Hold"
-msgstr "Aguardar"
+#~ msgid "Hold"
+#~ msgstr "Aguardar"
 
-#: src/cui-call-display.ui:318
-msgid "Dial Pad"
-msgstr "Marcador"
+#~ msgid "Dial Pad"
+#~ msgstr "Marcador"
 
-#: src/cui-dialpad.ui:24
-msgid "Enter a number"
-msgstr "Insira um número"
+#~ msgid "Enter a number"
+#~ msgstr "Insira um número"
 
-#: src/cui-dialpad.ui:25
-msgid "Type a phone number"
-msgstr "Insira um número de telefone"
+#~ msgid "Type a phone number"
+#~ msgstr "Insira um número de telefone"
 
-#: src/cui-dialpad.ui:49
-msgid "Call that phone number"
-msgstr "Ligar para esse número de telefone"
+#~ msgid "Call that phone number"
+#~ msgstr "Ligar para esse número de telefone"
 
-#: src/cui-encryption-indicator.ui:21
-msgid "This call is not encrypted"
-msgstr "Esta chamada não é encriptada"
+#~ msgid "This call is not encrypted"
+#~ msgstr "Esta chamada não é encriptada"
 
-#: src/cui-encryption-indicator.ui:42
-msgid "This call is encrypted"
-msgstr "Esta chamada é encriptada"
+#~ msgid "This call is encrypted"
+#~ msgstr "Esta chamada é encriptada"
 
 #~ msgid "Call-UI Demo"
 #~ msgstr "Call-UI Demo"

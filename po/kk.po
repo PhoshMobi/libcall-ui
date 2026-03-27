@@ -1,0 +1,59 @@
+# Kazakh translation for libcall-ui.
+# Copyright (C) 2026 libcall-ui's COPYRIGHT HOLDER
+# This file is distributed under the same license as the libcall-ui package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>,  2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libcall-ui main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Phosh/libcall-ui/"
+"issues/\n"
+"POT-Creation-Date: 2025-10-20 21:07+0000\n"
+"PO-Revision-Date: 2026-03-27 23:16+0500\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <Kazakh>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#: src/cui-call.c:336
+msgid "Call active"
+msgstr "Қоңырау белсенді"
+
+#: src/cui-call.c:338
+msgid "Call held"
+msgstr "Қоңырау қабылданды"
+
+#: src/cui-call.c:340
+msgid "Calling…"
+msgstr "Қоңырау шалу…"
+
+#: src/cui-call.c:342
+msgid "Incoming call"
+msgstr "Кіріс қоңырауы"
+
+#: src/cui-call.c:344
+msgid "Call ended"
+msgstr "Қоңырау аяқталды"
+
+#: src/cui-call.c:347 src/cui-call.c:367 src/cui-call-display.c:296
+msgid "Unknown"
+msgstr "Белгісіз"
+
+#: src/cui-call.c:362
+msgid "Cellular"
+msgstr "Ұялы байланыс"
+
+#: src/cui-call.c:364
+msgid "SIP Voice"
+msgstr "SIP дауысы"
+
+#: src/cui-call-display.c:102
+msgid "Accepting call…"
+msgstr "Қоңырауды қабылдау…"
+
+#: src/cui-call-display.c:117
+msgid "Hanging up…"
+msgstr "Тұтқаны қою…"

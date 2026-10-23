@@ -1,0 +1,59 @@
+# Norwegian Nynorsk translation for libcall-ui.
+# Copyright (C) 2026 libcall-ui's COPYRIGHT HOLDER
+# This file is distributed under the same license as the libcall-ui package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libcall-ui main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/Phosh/libcall-ui/"
+"issues/\n"
+"POT-Creation-Date: 2026-07-07 20:22+0000\n"
+"PO-Revision-Date: 2026-10-23 11:54+0200\n"
+"Last-Translator: Roy-Magne Mo <rmo@sunnmore.net>\n"
+"Language-Team: Norwegian Nynorsk <nn@li.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/cui-call.c:336
+msgid "Call active"
+msgstr "Samtalen er aktiv"
+
+#: src/cui-call.c:338
+msgid "Call held"
+msgstr "Samtalen er sett på vent"
+
+#: src/cui-call.c:340
+msgid "Calling…"
+msgstr "Ringer …"
+
+#: src/cui-call.c:342
+msgid "Incoming call"
+msgstr "Innkomande samtale"
+
+#: src/cui-call.c:344
+msgid "Call ended"
+msgstr "Samtalen er avslutta"
+
+#: src/cui-call.c:347 src/cui-call.c:367 src/cui-call-display.c:288
+msgid "Unknown"
+msgstr "Ukjend"
+
+#: src/cui-call.c:362
+msgid "Cellular"
+msgstr "Mobilnett"
+
+#: src/cui-call.c:364
+msgid "SIP Voice"
+msgstr "SIP-tale"
+
+#: src/cui-call-display.c:91
+msgid "Accepting call…"
+msgstr "Godtek samtalen …"
+
+#: src/cui-call-display.c:106
+msgid "Hanging up…"
+msgstr "Legg på …"
